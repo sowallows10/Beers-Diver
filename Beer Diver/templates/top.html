@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<body>
+    <div class="bg_2">
+        <br>
+        <br>
+        <br>
+        <div class="letter">
+            <div class="letter-box">
+                <h1>beer maestro</h1>
+                <br>
+                <p>その時の気分、性格に合った至福の一杯と巡り合わせてくれる<br>ビールの達人へようこそ</p>
+                <br>
+                <p>◎あなたの気分に合わせて普段巡り合うことができないビールと<br>出会えるかもしれません</p>
+                <br>
+                <p>◎あなたの性格に最も合ったビールを提供することをお約束します</p>
+            </div>
+        </div>
+        <script>
+            $(window).on("load", function() {
+                $('.letter-box').fadeIn(3750); 
+            });
+        </script>
+        <br>
+        <br>
+        <br>
+        <div class="button">
+            <div class="shindan"><a href="/kibun1">気分診断</a></div>
+            <div class="shindan"><a href="/seikaku1">性格診断</a></div>
+        </div>
+    </div>
+    
+</body>
+
+{% endblock %}

@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+      
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background-color: white;
+  }
+  
+  /* *********************************
+  headerの設定
+  *********************************** */
+  @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+  header {
+    height: 60px;
+    width: 100%;
+    padding: 0px 0px;
+    background-color:#175b7f;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+  }
+  
+  .logo {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 24px;
+    color:#000b00;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    padding: 0 0px;
+  }
+  
+  /* *********************************　
+  mainの設定
+  *********************************** */
+  /*** 基本設定 ***/
+  .bg_2 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    max-height: 1500px;
+    background-image: url(https://sapporokitaku.goguynet.jp/wp-content/uploads/sites/193/2020/10/beer-cheers.jpg);
+    background-position: center center;
+   
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+    
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+    
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+    
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: white;
+
+    opacity: 0.85;
+
+  }
+  .bg_2 h1{
+    text-align: center;
+  }
+  .bg_rgba {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg_3 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+    max-height: 1000px;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+
+  .bg_3 h1{
+    text-align: center;
+  }
+
+  
+
+  
+
+  .seikakuimage{
+    text-align: center;
+  }
+  
+  .letter {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 60px auto 0;
+    max-width: 480px;
+    min-height: 240px;
+    padding: 24px;
+    position: relative;
+    width: 80%;
+    opacity: 0.85;
+  }
+
+  .letter-box {
+    display: none;
+  }
+  
+  .letter h1 {
+    font-size: 36px;
+    font-family: 'Pinyon Script', cursive;
+    text-align: center;
+    text-decoration:underline;
+  }
+  .letter:before, .letter:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  .letter:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+  }
+  .letter:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+  }
+
+  div.button {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .shindan{
+    font-size: 26px;
+    background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+    color: #444;
+    gap: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 40px;
+    border-radius: 6px;
+    border-bottom: 2px solid #444;
+    position: relative;
+    bottom: 0;
+    gap: 60px;
+  }
+
+  .shindan:active{
+    border: 0;
+    bottom: -2px;
+    gap: 60px;
+  }
+
+  .shindan1{
+    font-size: 22px;
+    background: linear-gradient(45deg, #757575 0%, #9E9E9E 45%, #E8E8E8 70%, #9E9E9E 85%, #757575 90% 100%);
+    color: #444;
+    gap: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 28px;
+    border-radius: 6px;
+    border-bottom: 2px solid #444;
+    position: relative;
+    bottom: 0;
+    gap: 60px;
+  }
+
+  .shindan1:active{
+    border: 0;
+    bottom: -2px;
+    gap: 60px;
+  }
+
+  form button {
+    font-size: 20px;
+    display: inline-block;
+    background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+    color: #444;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 30px;
+    border-radius: 8px;
+    border-bottom: 2px solid #444;
+    position: relative;
+    bottom: 0;
+  }
+  form button:active {
+    border: 0;
+    bottom: -2px;
+  }
+  
+  .loading {
+    mix-blend-mode: multiply;
+    display: none;
+  }
+
+  main {
+    padding: 60px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    top: 0;
+  }
+  
+  .content {
+      box-sizing: border-box;
+      width:50%;
+      background-color:#fff;
+      color: #666;
+      padding:.7em;
+      margin: 5px auto;
+      border: 3px solid rgba(115, 210, 230);
+      border-radius: 15px;
+      }
+  
+  .content p { /* p要素に背景や角丸を指定 */
+      margin:5px 0 0;
+      padding:10px;
+      background-color: rgb(115, 211, 230);;
+      border-radius:8px;
+      font-size:15px;
+  }
+  
+  .content h1 {
+    font-size: 20px;
+    color: #364e96;/* 文字色 */
+    padding: 0.5em 0;/* 上下の余白 */
+    border-top: solid 3px #364e96;/* 上線 */
+    border-bottom: solid 3px #364e96;/* 下線 */
+  }
+  
+  .content span { /* span要素（質問テキスト）をブロック化し横に並べる */
+      width: 48%;
+      padding: 5px;
+      display: inline-block;
+      vertical-align: top;
+  }
+  
+  /* 「click」ボタンのスタイル */
+  @import url(https://fonts.googleapis.com/css?family=Roboto);
+  @import url(https://fonts.googleapis.com/css?family=Handlee);
+  .paper {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    min-width: 400px;
+    height: 450px;
+    margin: 10px auto;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+  .paper:before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0; left: 0;
+      width: 60px;
+      background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+      background-size: 30px 30px;
+      border-right: 3px solid #D44147;
+      box-sizing: border-box;
+  }
+
+.paper-content {
+    position: absolute;
+    top: 30px; right: 0; bottom: 30px; left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+    background-size: 30px 30px;
+}
+
+.kibunform{
+  font-size: 22px;
+  text-align:center;
+}
+.kibunform h1{
+  vertical-align: 10px;
+  text-align:center;
+}
+  
+  /* 「計算する」ボタンのスタイル */
+  .kibunkekka{
+    color: #000000;
+    font-size: 24px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    gap: 30px;
+  }
+  .kekkahyoji{
+    text-align:center;
+  }
+  .kekkaimage {
+    color: #000000;
+    text-align:center;
+    opacity: 0.99;
+  }
+
+  .kekkaimage img{
+    text-align:center;
+    opacity: 1;
+  }
+
+  .se2link{
+    color: #000000;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  
+  /* *********************************　
+  footerの設定
+  *********************************** */
+  footer {
+    width: 100%; 
+    height: 50px; 
+    position: fixed; 
+    bottom: 0;
+    background: #175b7f; /* 背景色を指定 */
+    text-align: center;
+  }
+  
+  .footer_logo {
+    line-height: 50px;
+    color:#000b00;
+    font-size:17px;
+  }
