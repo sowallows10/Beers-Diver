@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<body>
+    <div class="field">
+    </div>
+    <div class="bg_3">
+        <br>
+        <br>
+        <br>
+        <div class="kekkahyoji">
+            <h1>あなたの気分に合うビールは、{{name}}です！</h1>
+        </div>
+        <br>
+        <div class="kekkaimage">
+            <img src= "{{ imageurl }}" style="margin: 0px; vertical-align: top; width: 50%;">
+        </div>
+        <br>
+        <div class="kibunkekka">
+            <div class="shindan1"><a href="{{url}}">ビール詳細へ</a></div>
+            <div class="shindan1"><a href="/">TOPへ戻る</a></div>
+        <div>
+        <br>
+        <br>
+    </div>
+</body>
+{% endblock %}

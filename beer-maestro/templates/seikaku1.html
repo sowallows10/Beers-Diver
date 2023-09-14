@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+<body>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <div class="bg_2">
+        <br>
+        <br>
+        <br>
+        <div class="paper">
+            <div class="paper-content">
+                <div class="kibunform">
+                    <h1>性格診断のページだよ！</h1>
+                    <br>
+                    <form action="/seikaku2" method="POST">
+                        <label><input type="checkbox" name="fav" value="マイペース">マイペース</label>
+                        <label><input type="checkbox" name="fav" value="せっかち">せっかち</label>
+                        <br>
+                        <label><input type="checkbox" name="fav" value="ポジティブ">ポジティブ</label>
+                        <label><input type="checkbox" name="fav" value="ネガティブ">ネガティブ</label>
+                        <br>
+                        <label><input type="checkbox" name="fav" value="甘えん坊">甘えん坊</label>
+                        <label><input type="checkbox" name="fav" value="サバサバ">サバサバ</label>
+                        <br>
+                        <label><input type="checkbox" name="fav" value="ミーハー">ミーハー</label>
+                        <label><input type="checkbox" name="fav" value="一途">一途</label>
+                        <br>
+                        <label><input type="checkbox" name="fav" value="恥ずかしがり屋">恥ずかしがり屋</label>
+                        <label><input type="checkbox" name="fav" value="目立ちたがり屋">目立ちたがり屋</label>
+                        <br>
+                        <input type="text" size="50" name="fav" placeholder="ex）おっとり,明るい,うるさい">
+                        <br>
+                        <br>
+                        <button type="submit" class="btn">私の性格を送信！</button>
+                        <div class="loading">
+                            <img src="../static/images/beer-18.gif" style="margin: 0px; vertical-align: top; width: 30% ;height: 90px">
+                        </div>
+                        <script>
+                            $(function() {
+                                $('.btn').on('click', function() {
+                                    $('.btn').hide();
+                                    $('.loading').show();
+                                });
+                            });
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
